@@ -10,6 +10,11 @@ tensorboard==1.8.0
 tensorflow==1.8.0
 zomatopy==1.0.10
 
+To run the bot:
+
+Run nlu_model.py followed by dialogue_management.py and then start typing your questions.
+When prompted, please provide your email ID and the search results will be emailed to you.
+
 Please note:
 
 1) While entering location, please start with "in". Examples - "In Bangalore", "Mexican food in Mumbai"
