@@ -1,0 +1,54 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "location",
+        "price",
+        "cuisine"
+      ]
+    },
+    "validate_location": {
+      "slots": [
+        "loc_avl"
+      ]
+    },
+    "action_slot_reset": {
+      "slots": []
+    },
+    "utter_restart": {
+      "slots": []
+    },
+    "validate_cuisine": {
+      "slots": [
+        "csn_avl"
+      ]
+    },
+    "validate_price": {
+      "slots": [
+        "prc_avl"
+      ]
+    },
+    "action_restaurant": {
+      "slots": [
+        "location",
+        "price",
+        "cuisine"
+      ]
+    },
+    "get_mail": {
+      "slots": [
+        "emailid"
+      ]
+    }
+  },
+  "rasa_core": "0.10.1",
+  "max_histories": [
+    5,
+    5
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ]
+}
